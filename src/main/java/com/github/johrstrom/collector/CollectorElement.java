@@ -48,6 +48,9 @@ public abstract class CollectorElement<C extends BaseCollectorConfig> extends Ab
 	}
 
 	protected void clearCollectors() {
+		if(registry == null) {
+			registry = JMeterCollectorRegistry.getInstance();
+		}
 		Iterator<Entry<C, Collector>> iter = this.collectors.entrySet().iterator();
 		while (iter.hasNext()) {
 			Entry<C, Collector> entry = iter.next();
@@ -56,7 +59,7 @@ public abstract class CollectorElement<C extends BaseCollectorConfig> extends Ab
 		}
 	}
 
-	protected void makeNewCollectors() {
+	protected void makeNewCollectors() {	
 		this.clearCollectors();
 
 		CollectionProperty collectorDefs = this.getCollectorConfigs();

@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.johrstrom</groupId>
 	<artifactId>jmeter-prometheus-plugin</artifactId>
-	<version>0.6.1-SNAPSHOT</version>
+	<version>0.6.2-rc1</version>
 	<name>Jmeter-Prometheus Listener Plugin</name>
 	<description>A Jmeter plugin that creates a Prometheus endpoint of results.</description>
 	<url>https://github.com/johrstrom/jmeter-prometheus-plugin</url>
@@ -31,9 +31,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/johrstrom/jmeter-prometheus-plugin</url>
-		<connection>scm:git:git://github.com/johrstrom/jmeter-prometheus-plugin.git</connection>
-		<developerConnection>scm:git:git@github.com:johrstrom/jmeter-prometheus-plugin.git</developerConnection>
+		<url>https://github.com/ethanadams/jmeter-prometheus-plugin</url>
+		<connection>scm:git:git://github.com/ethanadams/jmeter-prometheus-plugin.git</connection>
+		<developerConnection>scm:git:git@ethanadams/jmeter-prometheus-plugin.git</developerConnection>
 	  <tag>HEAD</tag>
   	</scm>
 
